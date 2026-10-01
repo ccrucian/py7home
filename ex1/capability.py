@@ -28,7 +28,7 @@ class Sproutling(Creature, HealCapability):
         return f"{self.name} uses Vine Whip!"
 
     def heal(self) -> str:
-        return f"{self.name} heals and other for a large amount."
+        return f"{self.name} heals itself for a large amount."
 
 
 class Bloomelle(Creature, HealCapability):
@@ -39,7 +39,7 @@ class Bloomelle(Creature, HealCapability):
         return f"{self.name} uses Petal Dance!"
 
     def heal(self) -> str:
-        return f"{self.name} heals and other for a large amount."
+        return f"{self.name} heals itseld for a large amount."
 
 
 class Shiftling(Creature, TransformCapability):
