@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-import typing
 
 
 class Creature(ABC):
@@ -45,5 +44,3 @@ class Torragon(Creature):
 
     def attack(self) -> str:
         return "Torragon uses Hydro Pump!"
-
-

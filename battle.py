@@ -28,5 +28,5 @@ def main() -> None:
     print(f"{aquabub.attack()}")
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
