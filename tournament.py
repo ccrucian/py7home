@@ -1,8 +1,10 @@
-from ex2 import (NormalStrategy,
-                 AggressiveStrategy,
-                 DefensiveStrategy,
-                 BattleStrategy, InvalidStrategy
+from ex2 import (
+            NormalStrategy,
+            AggressiveStrategy,
+            DefensiveStrategy,
+            BattleStrategy, InvalidStrategy
                 )
+
 from ex1 import (
     TransformCreatureFactory,
     HealingCreatureFactory
@@ -14,7 +16,8 @@ from ex0 import (
 
 
 def tournament(opponents: list[tuple[
-    CreatureFactory, BattleStrategy]]) -> None:
+        CreatureFactory, BattleStrategy
+        ]]) -> None:
     print("*** Tournament ***")
     print(f"{len(opponents)} opponents involved")
 

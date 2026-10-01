@@ -10,4 +10,6 @@ from .capability import (
 __all__ = [
     "HealingCreatureFactory",
     "TransformCreatureFactory",
+    "HealCapability",
+    "TransformCapability"
 ]

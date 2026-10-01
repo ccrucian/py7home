@@ -5,3 +5,12 @@ from .strategy import (
     BattleStrategy,
     InvalidStrategy
 )
+
+
+__all__ = [
+        NormalStrategy,
+        AggressiveStrategy,
+        DefensiveStrategy,
+        BattleStrategy,
+        InvalidStrategy
+    ]
