@@ -13,7 +13,7 @@ class InvalidStrategy(Exception):
 class BattleStrategy(ABC):
 
     @abstractmethod
-    def act(self) -> str:
+    def act(self, creature: Creature) -> str:
         pass
 
     @abstractmethod
@@ -34,7 +34,7 @@ class AggressiveStrategy(BattleStrategy):
         return isinstance(creature, TransformCapability)
 
     def act(self, creature: Creature) -> str:
-        if not self.is_valid(creature):
+        if not isinstance(creature, TransformCapability):
             raise InvalidStrategy("Invalid Strategy for aggressive")
         act1 = creature.transform()
         act2 = creature.attack()
@@ -48,7 +48,7 @@ class DefensiveStrategy(BattleStrategy):
         return isinstance(creature, HealCapability)
 
     def act(self, creature: Creature) -> str:
-        if not self.is_valid(creature):
+        if not isinstance(creature, HealCapability):
             raise InvalidStrategy("Invalid strategy for difensive")
         act1 = creature.attack()
         act2 = creature.heal()

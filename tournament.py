@@ -12,7 +12,7 @@ from ex1 import (
 
 from ex0 import (
     FlameFactory, AquaFactory,
-    CreatureFactory)
+    CreatureFactory, Creature)
 
 
 def tournament(opponents: list[tuple[
@@ -22,7 +22,7 @@ def tournament(opponents: list[tuple[
     print(f"{len(opponents)} opponents involved")
 
     creatures: list[
-        tuple[CreatureFactory, BattleStrategy]
+        tuple[Creature, BattleStrategy]
     ] = []
 
     for factory, strategy in opponents:
